@@ -19,9 +19,20 @@ const Login = () => {
     setCredentials((prev) => ({ ...prev, [e.target.id]: e.target.value }));
   };
 
+  // const handleClick = (e) => {
+  //   e.preventDefault();
+  //   navigate("/home");
+  // };
+
   const handleClick = (e) => {
     e.preventDefault();
-    navigate("/home");
+    // Simulate successful login for demonstration purposes
+    // Replace this with your actual login logic
+    const isLoggedIn = true;
+
+    if (isLoggedIn) {
+      navigate("/home1"); // Navigate to the home page
+    }
   };
 
   return (
